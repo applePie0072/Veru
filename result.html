@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      HOME
+    </title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Oxana" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <style>
+      .bg-gradient {
+        background: linear-gradient(180deg, rgba(11, 29, 38, 0) -7.09%, #0B1D26 50.19%);
+      }
+      .slidebar {
+        background-image: url("assets/img/second-topback.png");
+        background-color: #d53369;
+        width: 100%;
+        height: 100%;
+      }
+      .top-back::before {
+        content: ' ';
+        background-image: url(./assets/img/second-topback.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 584px;
+        opacity: 0.1;
+        position: absolute;
+      }
+      .revr-green{
+        color: #91B539;
+      }
+      .bg-revr-green {
+        background-color: #91B539;
+      }
+      .circle-bg {
+        margin-top: -400px;
+        margin-left: -466px;
+        width: 150%;
+        height: 1000px;
+        border-radius: 43%;
+        position: absolute;
+        z-index: -5;
+        background: linear-gradient(180deg, #16303D 0%, rgba(22, 48, 61, 0) 100%);
+      }
+      
+      #follow {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+      }
+    </style>
+  </head>
+  <body class="leading-normal tracking-normal text-white bg-primary mx-30 font-sans">
+    <div>
+      <header class="relative flex items-end justify-center h-screen overflow-hidden">
+        <div class="flex flex-col min-w-full top-back">
+          <div class="mx-20 pt-20 relative z-30">
+            <div class="flex mb-4 justify-around">
+              <div class="flex-1 w-1/12 self-center">
+                <p id="follow" class="capitalize whitespace-nowrap mb-4 z-10">follow us</p>
+                <img class="mb-6" src="assets/img/instagram.svg"/>
+                <img class="mb-6" src="assets/img/twitter.svg"/>
+                <img/>
+              </div>
+              <div class="flex-6 w-10/12 lg:text-sm">
+                <div class="flex text-center lg:invisible xl:invisible 2xl:visible">
+                  <hr class="w-10 self-center">
+                  <p class="ml-10 tracking-widest z-30">REVR</p>
+                </div>
+                <p class="mt-8 capitalize text-center lg:visible xl:visible xl:text-5xl 2xl:visible 2xl:text-6xl">REVR Revenue Projection Results</p>
+                <div class="flex text-center mt-20 lg:invisible xl:invisible 2xl:visible">
+                  <p class="lowercase mr-2">scroll down</p>
+                  <img src="assets/img/arrow_down.svg"/>
+                </div>
+              </div>
+              <div class="flex-1 w-1/12 text-right self-center">
+                <a><p class="mb-10">Start</p></a>
+                <a><p class="mb-10">01</p></a>
+                <a><p class="mb-10">02</p></a>
+                <a><p class="mb-10">03</p></a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="bg-gradient py-24 -mt-16 relative z-30 min-w-full"></div> -->
+        </div>
+        <!-- <img src="assets/img/second-topback.png" class="absolute z-0 w-auto min-w-full min-h-full max-w-none opacity-10" alt="second-bg" width="100%" height="584px" /> -->
+      </header>
+      </div>
+      <!--Nav-->
+      <nav id="header" class="fixed w-full z-30 top-0 text-white">
+        <div class="flex justify-around mx-20 items-center flex-wrap py-2">
+          <div class="flex items-center"">
+            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+              <img src="assets/img/logo.svg"/>
+            </a>
+          </div>
+          <div class="block lg:hidden pr-4">
+            <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <div class="lg:flex lg:items-center lg:w-auto hidden lg:mt-0 lg:p-0 z-20" id="nav-content">
+            <ul class="list-reset lg:flex justify-center items-center capitalize text-2xl">
+              <li class="mr-3">
+                <a class="inline-block py-2 px-4 font-bold no-underline" href="#">Home</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block no-underline hover:text-underline py-2 px-4" href="#">Revenue</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block no-underline hover:text-underline py-2 px-4" href="#">Membership</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block no-underline hover:text-underline py-2 px-4" href="#">About us</a>
+              </li>
+              <li class="lg:ml-20">
+                <a class="flex no-underline hover:text-underline py-2 px-4" href="#">
+                  <img src="assets/img/avatar.svg"/>Account
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Hero-->
+    </div>
+    <section>
+      <div class="mx-40 mt-16 text-center">
+        <div class="text-white text-left mb-20 mx-auto">
+          <p class="text-lg">Showing Results for</p>
+          <p class="text-2xl max-w-6xl revr-green">
+            California Academy of Sciences, Music Concourse Drive, San Francisco, CA, USA
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex flex-row justify-between mx-48">
+        <div class="float-left">
+          <img src="./assets/img/Compound circular chart.png" alt="circle" width="742" height="672" />
+        </div>
+        <div class="float-right">
+          <div class="progress-bg">
+            <div class="text-xl text-center py-6">Area Seasonality</div>
+            <div class="progress green first-bar"> <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
+              <div class="progress-value">22%</div>
+            </div>
+          </div>
+          <div class="progress-bg mt-12 mb-12">
+            <div class="text-xl text-center py-6">Property Revenue Vs.<br>National Average</div>
+            <div class="progress green second-bar"> <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
+              <div class="progress-value">95%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="mx-48 text-center">
+        <div>
+          <table class="table-fixed w-full text-left  border border-gray-800 text-xl rounded-t-3xl">
+            <thead>
+                <tr class="bg-revr-green text-gray-200 ml-8 ">
+                    <th class="w-1/4 px-16 py-3"></th>
+                    <th class="w-1/4 px-4 py-3">Optimized Revenue</th>
+                    <th class="w-1/4 px-4 py-3">Standard Revenue</th>
+                    <th class="w-1/4 px-4 py-3">Long Term Rental Revenue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-gray-800 text-gray-200">
+                  <tr class=" bg-gray-900 text-gray-200 ">
+                    <td class="px-16 py-4">Revenue</td>
+                    <td class="px-4 py-4 revr-green text-left text-2xl">$91,345</td>
+                    <td class="px-4 py-4 revr-green text-left text-2xl">$71,321</td>
+                    <td class="px-4 py-4 revr-green text-left text-2xl">$42.00</td>
+                </tr>
+                    <td class="px-16 py-4">Gross Cap Rate</td>
+                    <td class="px-4 py-4 text-left">13.24%</td>
+                    <td class="px-4 py-4 text-left">10.15%</td>
+                    <td class="px-4 py-4 text-left">6.91%</td>
+                </tr>
+                <tr class=" bg-gray-800 text-gray-200">
+                  <td class="px-16 py-4">Net Cap Rate</td>
+                  <td class="px-4 py-4">8.53%</td>
+                  <td class="px-4 py-4">8.53%</td>
+                  <td class="px-4 py-4">5.10%</td>
+              </tr>
+            </tbody>
+        </table>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="mx-48 mt-16 text-center">
+        <div class="ml-8 mb-4 text-left text-2xl">
+          With <span class="revr-green">Financing</span> 
+        </div>
+        <div>
+          <table class="table-fixed w-full text-left rounded-lg border border-gray-800 text-xl">
+            <thead>
+                <tr class="bg-gray-900 text-gray-200 ml-8 ">
+                    <th class="w-1/4 px-16 py-3">Monthly Debt Services</th>
+                    <th class="w-1/4 px-4 py-3">$91,345</th>
+                    <th class="w-1/4 px-4 py-3">$71,321</th>
+                    <th class="w-1/4 px-4 py-3">$42.00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-gray-800 text-gray-200">
+                    <td class="px-16 py-4">Monthly Net Cash Flow</td>
+                    <td class="px-4 py-4 text-left">13.24%</td>
+                    <td class="px-4 py-4 text-left">10.15%</td>
+                    <td class="px-4 py-4 text-left">6.91%</td>
+                </tr>
+                <tr class=" bg-gray-900 text-gray-200 ">
+                    <td class="px-16 py-4">Net Operating Income</td>
+                    <td class="px-4 py-4 revr-green text-left text-2xl">$20,148</td>
+                    <td class="px-4 py-4 revr-green text-left text-2xl">$125.04</td>
+                    <td class="px-4 py-4 revr-green text-left text-2xl">$700.21</td>
+                </tr>
+                <tr class=" bg-gray-800 text-gray-200">
+                  <td class="px-16 py-4">DSCR</td>
+                  <td class="px-4 py-4">1.26</td>
+                  <td class="px-4 py-4">.94</td>
+                  <td class="px-4 py-4">.57</td>
+              </tr>
+              <tr class=" bg-gray-900 text-gray-200">
+                <td class="px-16 py-4">Cash on Cash Returns</td>
+                <td class="px-4 py-4">11%</td>
+                <td class="px-4 py-4">7.5%</td>
+                <td class="px-4 py-4">4.3%</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="mx-48 mt-16 text-center">
+        <div class="ml-8 mb-4 text-left text-2xl">
+          Without <span class="revr-green">Financing</span> 
+        </div>
+        <div>
+          <table class="table-fixed w-full text-left rounded-lg border border-gray-800 text-xl pl-16">
+            <thead >
+                <tr class="bg-gray-900 text-gray-200">
+                    <th class="w-1/4 pl-16 py-3">Monthly Net Cashflow</th>
+                    <th class="w-1/4 px-4 py-3">$91,345</th>
+                    <th class="w-1/4 px-4 py-3">$71,321</th>
+                    <th class="w-1/4 px-4 py-3">$42.00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class=" bg-gray-800 text-gray-200 ">
+                    <td class="px-16 py-4">Net Operating Income</td>
+                    <td class="px-4 py-4 revr-green text-left text-2xl">$20,148</td>
+                    <td class="px-4 py-4 revr-green text-left text-2xl">$125.04</td>
+                    <td class="px-4 py-4 revr-green text-left text-2xl">$700.21</td>
+                </tr>
+                <tr class="bg-gray-900 text-gray-200">
+                  <td class="px-16 py-4">Cash on Cash Returns</td>
+                  <td class="px-4 py-4 text-left">8.53%</td>
+                  <td class="px-4 py-4 text-left">8.53%</td>
+                  <td class="px-4 py-4 text-left">5.10%</td>
+              </tr>
+            </tbody>
+        </table>
+        </div>
+      </div>
+    </section>
+    <section class="relative">
+      <span class="w-10 h-10 rounded-full bg-revr-green absolute fix-position text-4xl pb-3 font-black text-center">&#8722;</span>
+      <div class="mx-48 mt-16 text-center">
+        <div class="ml-8 mb-4 text-left text-2xl">
+          Show Expense <span class="revr-green">Estimate</span> 
+        </div>
+        <div class="border border-gray-800 text-xl">
+          <div class="flex flex-row justify-around py-8 mx-16 border-b border-gray-800">
+            <div class="flex-1 text-left">
+              <div class="pb-4">Est. Expenses</div>
+              <div class="ml-16">Taxes</div>
+            </div>
+            <div class="flex-1 text-left">
+              <div class="pb-4">$91,345 - 30%</div>
+              <div>$3,200</div>
+            </div>
+            <div class="flex-1 text-left">
+              <div class="pb-4">$71,321 - 30%</div>
+              <div>$3,200</div>
+            </div>
+            <div class="flex-1 text-left">
+              <div class="pb-4">$42.00 - 5%</div>
+              <div>$3,200</div>
+            </div>
+          </div>
+          
+          <div class="flex flex-row justify-around py-8 ">
+            <div class="flex-1 text-left">
+              <div class="revr-green pl-16">Total Expenses</div>
+              <div class="pl-16">Expenses to match above tables</div>
+            </div>
+            <div class="flex-1 text-left">
+              <div class="revr-green pb-4 pl-8">$3,200</div>
+              <div class="pl-8">2933</div>
+            </div>
+            <div class="flex-1 text-left">
+              <div class="revr-green pb-4">$3,200</div>
+              <div>$3,200</div>
+            </div>
+            <div class="flex-1 text-left">
+              <div class="revr-green pb-4"> $3,200</div>
+              <div>441.47</div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>   
+    <section>
+      <div class="flex flex-row justify-between mx-48 mt-16 text-center border-b border-green-400 py-6 pl-24 pr-60 bg-gray-800 text-xl">
+        <div class="text-left">Area Precision: (radius of search) Square Miles</div>
+        <div class="text-right text-2xl"> 6.9mi</div>
+      </div>
+      <div class="flex flex-row justify-between mx-48 text-center border-b border-green-400 py-6 pl-24 pr-60 text-xl">
+        <div class="text-left">Area Revenue vs. National Revenue Mean: Compares to National Average (1 is avg)</div>
+        <div class="text-right text-2xl"> .96</div>
+      </div>
+      <div class="flex flex-row justify-between mx-48 text-center border-b border-green-400 py-6 pl-24 pr-60 bg-gray-800 text-xl">
+        <div class="text-left">Average Area Nightly Rate: </div>
+        <div class="text-right text-2xl"> $100</div>
+      </div>
+      <div class="flex flex-row justify-between mx-48 text-center border-b border-green-400 py-6 pl-24 pr-60 text-xl">
+        <div class="text-left">Average Area Monthly Revenue:</div>
+        <div class="text-right text-2xl"> $1500</div>
+      </div>
+      <div class="flex flex-row justify-between mx-48 text-center border-b border-green-400 py-6 pl-24 pr-60 bg-gray-800 text-xl">
+        <div class="text-left">Revenue Per Square Foot (Optimized):</div>
+        <div class="text-right text-2xl"> $100</div>
+      </div>
+      <div class="flex flex-row justify-between mx-48 text-center border-b border-green-400 py-6 pl-24 pr-60  text-xl">
+        <div class="text-left">Area Average Per Square Foot: </div>
+        <div class="text-right text-2xl"> $86</div>
+      </div>
+      <div class="flex flex-row justify-between mx-48 text-center border-b border-green-400 bg-gray-800 py-6 pl-24 pr-60 text-xl">
+        <div class="text-left">Area Average Per Square Foot: </div>
+        <div class="text-right text-2xl">.22</div>
+      </div>
+      <div class="flex flex-row justify-between mx-48 text-center border-b border-green-400 py-6 pl-24 pr-60 text-xl">
+        <div class="text-left"> Area Season Length: (Months)</div>
+        <div class="text-right text-2xl"> 5.4</div>
+      </div>
+      <div class="flex flex-row justify-between mx-48 text-center border-b border-green-400 py-6 pl-24 bg-gray-800 pr-60 text-xl">
+        <div class="text-left">Peak Month: </div>
+        <div class="text-right text-2xl"> July</div>
+      </div>
+    </section>    
+    <!-- <div class="circle-bg text-9xl text-white text-center"></div> -->
+    <section class="border-b py-8">
+    </section>
+    
+    <!-- Change the colour #f8fafc to match the previous section colour -->
+    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+          <g class="wave" fill="#f8fafc">
+            <path
+              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+            ></path>
+          </g>
+          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+            <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+              <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+              <path
+                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                opacity="0.100000001"
+              ></path>
+              <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" opacity="0.200000003"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <section class="container mx-auto text-center py-6 mb-12">
+      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+        Call to Action
+      </h1>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <h3 class="my-4 text-3xl leading-tight">
+        Main Hero Message to sell yourself!
+      </h3>
+      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        Action!
+      </button>
+    </section>
+    <!--Footer-->
+    <footer class="bg-primary">
+      <div class="lg:mx-56 text-center">
+        <p class="text-6xl font-sans text-center mb-12">Become a REVE Member</p>
+        <p class="text-2xl leading-8 px-40 text-center">Whether you’re searching for your own investment property, or you are a realtor with client interests, our revenue predictions offer a ton of value for your business. Search multiple addresses and have all results stored in your account, so that you can revisit them when needed.</p>
+      </div>
+      <div class="bg-revr-green mt-28 pt-20 px-28 pb-14 text-left lg:ml-56" style="color: #26383C; border-top-left-radius: 60px;">
+        <p class="font-sans text-4xl leading-10 font-bold ml-6">Stay up to date on all things AirBnB related</p>
+        <div class="flex text-center self-center mt-9">
+          <img src="assets/img/email.svg" class="transform translate-x-11 z-20">
+          <input class="py-6 pl-14 pr-96 border-0 rounded-2xl text-sm text-left" placeholder="Your email"/>
+          <a>
+            <img src="assets/img/send.svg" class="bg-primary rounded-full ml-10 self-center px-3 py-3">
+          </a>
+        </div>
+      </div>
+      <div class="lg:mx-56 my-20 text-center">
+        <div class="flex">
+          <a href="#">
+            <img class="h-2/3" src="assets/img/logo.svg"/>
+          </a>
+        </div>
+        <div class="w-full flex flex-col justify-around md:flex-row py-6 text-white">
+          <div class="text-left w-2/6">
+            <p class="flex-wrap">Revr is a platform designed to help investors make better purchases when buying short term rental properties, or vacation homes. Our proprietary system is designed with machine learning and A.I. to quickly analyze millions of short-term rental properties to determine what locations, features and amenities make one home more valuable than the other.</p>
+          </div>
+          <div class="text-left w-1/6">
+            <p class="uppercase md:mb-6 text-2xl font-bold">about</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline uppercase text-lg">about revr</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline uppercase text-lg">contact us</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline uppercase text-lg">faq's</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline uppercase text-lg">blog</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline uppercase text-lg">terms & conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-left w-1/6">
+            <p class="uppercase md:mb-6 text-2xl font-bold">REVR STUFF</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline uppercase text-lg">GET REVENUE</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline uppercase text-lg">SIGN UP</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline uppercase text-lg">LOG IN</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline uppercase text-lg">SAVED SEARCHES</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline uppercase text-lg">MY ACCOUNT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-left w-1/6">
+            <p class="uppercase md:mb-6 text-2xl font-bold">CONTACT INFORMATION</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0 font-sans">
+                <a href="#" class="no-underline hover:underline uppercase text-lg">INFO@RUNREVR.COM</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery if you need it
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  -->
+    <div
+    x-data="scrollProgress"
+    class="fixed inline-flex items-center justify-center overflow-hidden rounded-full bottom-5 left-5"
+  >
+    <!-- Building a Progress Ring: https://css-tricks.com/building-progress-ring-quickly/ -->
+    <svg class="w-20 h-20">
+      <circle
+        class="text-gray-300"
+        stroke-width="5"
+        stroke="currentColor"
+        fill="transparent"
+        r="30"
+        cx="40"
+        cy="40"
+      />
+      <circle
+        class="text-blue-600"
+        stroke-width="5"
+        :stroke-dasharray="circumference"
+        :stroke-dashoffset="circumference - percent / 100 * circumference"
+        stroke-linecap="round"
+        stroke="currentColor"
+        fill="transparent"
+        r="30"
+        cx="40"
+        cy="40"
+      />
+    </svg>
+    <span class="absolute text-xl text-blue-700" x-text="`${percent}%`"></span>
+  </div>
+    <script>
+      var scrollpos = window.scrollY;
+      var header = document.getElementById("header");
+      var navcontent = document.getElementById("nav-content");
+      var navaction = document.getElementById("navAction");
+      var brandname = document.getElementById("brandname");
+      var toToggle = document.querySelectorAll(".toggleColour");
+
+      document.addEventListener("scroll", function () {
+        /*Apply classes for slide in bar*/
+        scrollpos = window.scrollY;
+
+        if (scrollpos > 10) {
+          header.classList.add("bg-secondary");
+          navaction.classList.remove("bg-secondary");
+          navaction.classList.add("gradient");
+          navaction.classList.remove("text-gray-800");
+          navaction.classList.add("text-white");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-gray-800");
+            toToggle[i].classList.remove("text-white");
+          }
+          header.classList.add("shadow");
+          navcontent.classList.remove("bg-gray-100");
+          navcontent.classList.add("bg-secondary");
+        } else {
+          header.classList.remove("bg-secondary");
+          navaction.classList.remove("gradient");
+          navaction.classList.add("bg-secondary");
+          navaction.classList.remove("text-white");
+          navaction.classList.add("text-gray-800");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-white");
+            toToggle[i].classList.remove("text-gray-800");
+          }
+
+          header.classList.remove("shadow");
+          navcontent.classList.remove("bg-secondary");
+          navcontent.classList.add("bg-gray-100");
+        }
+      });
+    </script>
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add("hidden");
+          }
+        }
+      }
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+      const scrollProgress = () => {
+        return {
+            init() {
+                window.addEventListener('scroll', () => {
+                    let winScroll = document.body.scrollTop || document.documentElement.scrollTop
+                    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+                    this.percent = Math.round((winScroll / height) * 100)
+                })
+            },
+            circumference: 30 * 2 * Math.PI,
+            percent: 0,
+        }
+    }
+    </script>
+    
+  </body>
+</html>
